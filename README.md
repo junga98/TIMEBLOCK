@@ -1,4 +1,4 @@
-## 时间块 TIMEBLOCK
+### 时间块 TIMEBLOCK
 > Design & Develop：JUNGA ( xujunjia98@163.com )
 
 <div align=center>
@@ -25,22 +25,22 @@
 - 用户可以对色块进行预设，在新增时间块时可以直接使用预设。
 - 用户可以对某个行为设置时长目标，在一天、一星期、一周的时长进行限制，当某个行为统计的时长超出限制时会给予反馈。
 
-## 版本
-### 产品 MVP：
+### 版本
+#### 产品 MVP：
 时间块记录 时间块数据统计
 
-### v1 功能(已完成)
+#### v1 功能(已完成)
 - 时间块记录（记录某个行为的时长）
 - 统计时间块数据，将数据可视化展示（日数据、周数据）
 - 时间块预设（用于直接填充时间块属性）
 - 目标（对统计数据进行利用，为某一行为设立目标时间）
 
-### v2 其他可新增的功能
+#### v2 其他可新增的功能
 - 高级用户可以查看月、年统计数据
 - 用户可以导出自己的可视化数据报表分享
 - 可对行为发生的时间段进行提取，统计行为发生在每个时间段的概率，并以可视化的形式展示
 
-## 产品简介
+### 产品简介
 该软件提供了量化记录时间的功能，并能够根据所记录的时间将数据可视化地展现给用户。
 
 在本软件内，一天的时间被分为12个时间槽，每个时间槽代表2个小时。用户可将一天中的时间以打点分割的方式，虚拟地分割自己的时间，并给予时间块命名和颜色。
@@ -58,52 +58,52 @@
 从整体上看，实现了记录时间段功能、预设功能、可视化数据展示功能、目标功能。
 
 
-## 项目效果
+### 项目效果
 
-### 主页 Home_page
+#### 主页 Home_page
 ![主页](./photos/home_.png)
 
-### 预设页 Preset_page
+#### 预设页 Preset_page
 ![预设页](./photos/preset_.png)
 
-### 目标页 Progress_page
+#### 目标页 Progress_page
 ![目标页](./photos/progress_.png)
 
-### 数据统计 Statistics_page
+#### 数据统计 Statistics_page
 ![统计页](./photos/echart1.png)
 ![统计页2](./photos/echart2.png)
 
 
-## 技术栈
+### 技术栈
 
-### 前端
+#### 前端
 - Vue.js
 - Vuex
 - Vue-router
 - Axios
 - ECharts4（可视化数据展示）
 
-#### 组件化
+##### 组件化
 弹框组件，等待加载组件，时间槽容器组件，时间块组件，导航块组件，头部LOGO组件，设置面板组件，预设块组件，目标组件
-#### 模块化
+##### 模块化
 模块化组织（主页 预设 统计 目标），使用vuex进行状态管理，api统一管理
 
-### 后端
+#### 后端
 - Node.js(Express)
 - Mongoose
 
-#### 模块化开发
+##### 模块化开发
 API模块化开发 controller模块化组织
 
-#### RESTFUL API接口设计
+##### RESTFUL API接口设计
 blocks presets progresses
 
-### 数据库
+#### 数据库
 - MongoDB
 
 ---
 
-## 运行
+### 运行
 > 本项目为移动端APP，请运行开发者工具，在手机端调试模式下查看
 
 > This project is designed for the mobile terminal. Please run the developer's tool and check it in the debugging mode of the mobile terminal.
