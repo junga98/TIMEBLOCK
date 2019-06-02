@@ -1,4 +1,4 @@
-# 时间块 TIMEBLOCK
+## 时间块 TIMEBLOCK
 > Design & Develop：JUNGA ( xujunjia98@163.com )
 
 <div align=center>
@@ -8,41 +8,41 @@
 </div>
 
 
-# 技术栈 Stack
+## 技术栈 Stack
 
-## 前端 Front-end
+### 前端 Front-end
 - Vue.js
 - Vuex
 - Vue-router
 - Axios
 - ECharts4（可视化数据展示）
 
-## 后端 Back-end
+### 后端 Back-end
 - Node.js(Express)
 - Mongoose
 
-## 数据库 Data-base
+### 数据库 Data-base
 - MongoDB
 
 
 
-# 介绍 Introduction
+### 介绍 Introduction
  在我们自身的行为习惯里，有哪些习惯是潜在性错误而未被发现的。时间是有限的，在一天当中，我们的哪些行为习惯是消耗大量时间而不会获得任何效益的，哪些行为习惯是好的，但所执行的时间却十分短，对于每一种行为，它在一天、一星期、一个月中占用的时间是多长？如果它是一个错误的行为习惯，我们需要能够发现它，才能做出措施去纠正它。
 
  总之，如果对自身有比较高的要求，就需要收集自身的数据来更好地改善自己的行为习惯。为此，开发时间块系统（TIMEBLOCK），将一天中的时间使用块级化，让每个行为习惯都得以记录下来，再经过后台的统计分析完成后反馈给用户，以便于用户了解自己，审视自身的不足，在掌握自身时间使用的同时，改进自身的行为习惯以在未来获得更好的生活体验。 
 
-# 定义 Definition
+### 定义 Definition
 
 - 时间块：用户在打点时，与上一次打点的时间之间形成的一个块级元素，用来分割时间段。该时间块拥有持续时长、名称、色彩三项属性，其内部包含的数据可被用于统计分析。
 - 预设块：用户可以预先定义描述时间块的样式，在新生成时间块的时候直接将预定义的颜色和名字属性赋予新时间块
 
-# 设计&开发目标 Objective
+### 设计&开发目标 Objective
 - 让用户可以通过打点分割时间段并命名的方式记录一天中时间的使用情况；
 - 将用户记录的行为数据进行统计再以可视化数据的形式返回给用户，让用户直观感受时间的使用情况；
 - 用户可以对色块进行预设，在新增时间块时可以直接使用预设。
 - 用户可以对某个行为设置时长目标，在一天、一星期、一周的时长进行限制，当某个行为统计的时长超出限制时会给予反馈。
 
-# 功能描述 Function description
+## 功能描述 Function description
 该软件提供了量化记录时间的功能，并能够根据所记录的时间将数据可视化地展现给用户。
 
 在本软件内，一天的时间被分为12个时间槽，每个时间槽代表2个小时。用户可将一天中的时间以打点分割的方式，虚拟地分割自己的时间，并给予时间块命名和颜色。
@@ -60,38 +60,38 @@
 从整体上看，实现了记录时间段功能、可视化展示数据功能、设置目标、查看目标进度功能。
 
 
-# 项目效果
+## 项目效果
 
-## 主页 Home_page
+### 主页 Home_page
 ![主页](./photos/home_.png)
 
-## 预设页 Preset_page
+### 预设页 Preset_page
 ![预设页](./photos/preset_.png)
 
-## 目标页 Progress_page
+### 目标页 Progress_page
 ![目标页](./photos/progress_.png)
 
-## 数据统计 Statistics_page
+### 数据统计 Statistics_page
 ![统计页](./photos/echart1.png)
 ![统计页2](./photos/echart2.png)
 
-# 前端开发
+## 前端开发
 
-## 组件化
-弹框组件  加载组件  时间槽容器组件  时间块组件  导航块组件  头部LOGO组件  设置面板 组件
-## 模块化
-模块化组织  主页 预设 统计 目标 按功能muticlltion
-前端组件组合成功能模块集合到页面级的大组件中
+### 组件化
+弹框组件，等待加载组件，时间槽容器组件，时间块组件，导航块组件，头部LOGO组件，设置面板组件，预设块组件，目标组件
+### 模块化
+模块化组织（主页 预设 统计 目标），使用vuex进行状态管理，api统一管理
 
-# 后端
-## 模块化开发
-API controller模块化组织 => 路由模块化分配
 
-## RESTFUL API接口设计
+## 后端
+### 模块化开发
+API模块化开发 controller模块化组织
+
+### RESTFUL API接口设计
 blocks presets progresses
 ---
 
-# 运行
+## 运行
 > 本项目为移动端APP，请运行开发者工具，在手机端调试模式下查看
 
 > This project is designed for the mobile terminal. Please run the developer's tool and check it in the debugging mode of the mobile terminal.
