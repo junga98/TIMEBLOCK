@@ -43,7 +43,7 @@
 从整体上看，实现了记录时间段功能、预设功能、可视化数据展示功能、目标功能。
 
 ## 产品架构图
-![logo](./photos/TIMEBLOCK.png)
+![架构图](./photos/TIMEBLOCK.png)
 
 ## 产品版本
 ###  MVP：
