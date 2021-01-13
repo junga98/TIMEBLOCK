@@ -17,7 +17,7 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
-    "axios": "^0.18.0",
+    "axios": ">=0.21.1",
     "express": "^4.14.1"
   },
   "devDependencies": {
